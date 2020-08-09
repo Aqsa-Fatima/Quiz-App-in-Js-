@@ -1,0 +1,27 @@
+  #grad1 {
+            height: 200px;
+            background-color:rgb(102, 197, 150);
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to left, cyan, pink);
+            /* Standard syntax (must be last) */
+        }
+
+        .glow {
+            font-size: 70px;
+            color: #fff;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px BLUE, 0 0 40px BLUE, 0 0 50px BLUE, 0 0 60px BLUE, 0 0 70px BLUE;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+   
